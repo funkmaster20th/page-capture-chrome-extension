@@ -1,18 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "accessibility-assessment page capture extension",
-  "version": "2.0",
+  "name": "dass-accessibility-assessment page capture extension",
+  "version": "2.1",
   "permissions": [
     "tabs",
     "activeTab"
   ],
   "host_permissions": [
-    "http://localhost:*/*"
+    "https://local.tax.service.gov.uk/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "http://localhost:*/*"
+        "https://local.tax.service.gov.uk/*"
       ],
       "js": ["content.js"]
     }
